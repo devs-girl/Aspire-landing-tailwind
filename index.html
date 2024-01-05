@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jackie</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" type="text/tailwindcss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/1715d9e317.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+      @layer components {
+        .container {
+          @apply px-[250px] py-[0] mx-auto;
+        }
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Inter', sans-serif">
+    <!-- header  -->
+    <header>
+      <!-- banner  -->
+      <div
+        style="
+          background-image: url(./img/banner-bg.png);
+          background-position: right;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div
+          class="container px-[16px] md:px-[2%] flex justify-between items-center mb-[42px] md:mb-0 pt-[31px] md:pt-[53px]"
+        >
+          <div class="flex justify-between items-center">
+            <a href="/index.html">
+              <img
+                class="w-[125px] md:w-[212px] h-[38px] md:h-[64px]"
+                src="./img/logo.png"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <ul
+              class="flex items-center justify-center lg:gap-[45px] md:gap-[10px] gap-[11px]"
+            >
+              <li>
+                <a
+                  href=""
+                  class="text-base font-bold relative leading-normal block text-center rounded-full text-white"
+                >
+                  Log In
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-base font-bold text-white bg-[#9A86FF] relative p-[10px] leading-normal block text-center rounded-full uppercase"
+                >
+                  Sign Up
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="container block md:flex justify-between items-center p-[16px] md:px-[2%] md:h-[600px] lg:h-[841px] relative"
+        >
+          <!-- left  -->
+          <div class="md:w-auto lg:w-[578px]">
+            <h1
+              class="lg:text-[70px] text-[54px] font-bold text-white uppercase leading-[60px] lg:leading-[88px]"
+            >
+              100% up to 150+50 Spins
+            </h1>
+            <h3
+              class="text-[32px] lg:text-[48px] font-bold text-white leading-[64px] lg:leading-[88px]"
+            >
+              on Big Bass Bonanza
+            </h3>
+            <h5
+              class="text-[24px] lg:text-[32px] font-bold text-[#344D79] leading-[32px] lg:leading-[64px] pb-[24px] lg:pb-[48px]"
+            >
+              Promo code : BONANZA100
+            </h5>
+            <a
+              href=""
+              class="text-[24px] font-bold text-white bg-[#9A86FF] relative z-50 py-[15px] px-[10px] leading-normal w-full md:w-[325px] block text-center rounded-full py-[24px]"
+              style="box-shadow: 6px 7px 0px 0px #fff"
+            >
+              Play Here
+            </a>
+          </div>
+
+          <!-- right  -->
+          <div class="relative md:absolute bottom-0 right-0">
+            <img
+              class="scale-y-[1.7] mt-24 md:scale-y-100 md:mt-0 w-full h-[350px] md:w-4/5 md:h-[550px] xl:w-[700px] lg:h-[841px] 2xl:w-full ml-auto"
+              src="./img/banner.png"
+              alt=""
+            />
+          </div>
+
+          <!-- tooltip  -->
+
+          <div
+            class="relative lg:top-80 md:top-64 top-[-65px] flex justify-center"
+          >
+            <div
+              class="flex justify-between items-center w-[300px] md:w-[400px] lg:w-[458px] p-[20px] relative mt-[-40px]"
+              style="
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(42px);
+              "
+            >
+              <p
+                class="text-xs leading-6 md:leading-4 md:text-base text-black font-semibold"
+              >
+                By continuint to use our site, you agree to cookies being used
+                to help us improve performance. Find out morre with our Cookies
+                policy
+              </p>
+              <div
+                class="absolute top-[-10px] right-[-10px] rounded-full bg-black"
+              >
+                <a href="">
+                  <img
+                    class="text-center h-[30px] w-[30px]"
+                    src="./img/close.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- payment for web  -->
+
+      <div
+        class="bg-[#1E2C44] md:bg-[rgba(255, 255, 255, 0.7)] h-[430px] md:h-[350px] lg:h-[283px] relative z-50 mb-[500px] md:mb-[50px] lg:mb-[130px] md:mb-0"
+      >
+        <div class="container px-[16px] lg:px-0 pt-[30px] pb-[37px]">
+          <p
+            class="text-base md:text-xl text-white leading-8 font-normal text-center"
+          >
+            Significant T&Cs: 18+. New Players Only. Min Deposit £20. Max Bonus
+            £150 +50 Spins on Big Bass Bonanza. Spins expire after 24 hours.
+          </p>
+          <p
+            class="text-base leading-8 md:text-xl text-white font-normal text-center"
+          >
+            Wagering requirements apply 25x. Promo Code Bonanza100. Valid until
+            21.12.2024. BeGambleAware.org
+          </p>
+        </div>
+        <div
+          class="flex justify-center items-center gap-4 mb-[43px] md:mb-[31px]"
+        >
+          <img src="./img/time.png" alt="" />
+          <p class="text-xl font-bold leading-8 text-white">
+            it only takes 2 minutes!
+          </p>
+        </div>
+
+        <div
+          class="container px-[16px] lg:px-0 block md:flex justify-between items-center gap-[24px] mb-[29px]"
+        >
+          <div
+            class="text-white text-center p-[20px] w-auto md:w-[458px] mb-4 md:mb-0"
+            style="
+              border-radius: 30px;
+              background: rgba(154, 134, 255, 0.5);
+              box-shadow: 7px 8px 30px 0px rgba(52, 77, 121, 0.15);
+              backdrop-filter: blur(25px);
+            "
+          >
+            <div>
+              <img
+                class="mx-auto h-[70px] w-[70px] mb-[28px]"
+                src="./img/profile.png"
+                alt=""
+              />
+            </div>
+            <h1
+              class="text-2xl lg:text-[24px] md:text-[16px] font-bold leading-8"
+            >
+              Register an Account
+            </h1>
+          </div>
+          <div
+            class="text-white text-center p-[20px] w-auto md:w-[458px] mb-4 md:mb-0"
+            style="
+              border-radius: 30px;
+              background: rgba(154, 134, 255, 0.5);
+              box-shadow: 7px 8px 30px 0px rgba(52, 77, 121, 0.15);
+              backdrop-filter: blur(25px);
+            "
+          >
+            <div class="mx-auto">
+              <img
+                class="mx-auto h-[70px] w-[70px] mb-[28px]"
+                src="./img/deposite.png"
+                alt=""
+              />
+            </div>
+            <h1
+              class="text-2xl lg:text-[24px] md:text-[16px] font-bold leading-8"
+            >
+              Deposit
+            </h1>
+          </div>
+
+          <div
+            class="text-white text-center p-[20px] w-auto md:w-[458px] mb-4 md:mb-0"
+            style="
+              border-radius: 30px;
+              background: rgba(154, 134, 255, 0.5);
+              box-shadow: 7px 8px 30px 0px rgba(52, 77, 121, 0.15);
+              backdrop-filter: blur(25px);
+            "
+          >
+            <div class="mx-auto">
+              <img
+                class="mx-auto h-[70px] w-[70px] mb-[28px]"
+                src="./img/bonus.png"
+                alt=""
+              />
+            </div>
+            <h1
+              class="text-2xl lg:text-[24px] md:text-[16px] font-bold leading-8"
+            >
+              Get your bonus
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- providers for web  -->
+      <div
+        class="relative hidden md:block md:mt-[100px]"
+        style="background-image: linear-gradient(to right, #71f1e2, #b4f8f0)"
+      >
+        <h2
+          class="absolute top-48 md:top-[48px] w-fit left-0 right-0 mx-auto text-3xl font-bold"
+        >
+          Payment providers
+        </h2>
+
+        <img class="w-full" src="./img/providers.png" alt="" />
+      </div>
+
+      <!-- providers for mobile  -->
+      <div class="block md:hidden px-5 pb-10 md:mt-[-20px]">
+        <h2 class="text-center text-2xl font-bold mb-[53px]">
+          Payment providers
+        </h2>
+
+        <img class="w-full" src="./img/provider-1.svg" />
+
+        <div>
+          <img class="w-full" src="./img/provider-2.svg" />
+        </div>
+
+        <div class="mt-[-50px]">
+          <img class="w-full" src="./img/provider-7.svg" />
+        </div>
+
+        <div class="mt-[-50px]">
+          <img class="w-full" src="./img/provider-4.svg" />
+        </div>
+
+        <div class="mt-[-50px]">
+          <img class="w-full" src="./img/provider-6.svg" />
+        </div>
+
+        <div class="mt-[-50px]">
+          <img class="w-full" src="./img/provider-3.svg" />
+        </div>
+
+        <div class="mt-[-50px]">
+          <img class="w-full" src="./img/provider-5.svg" />
+        </div>
+      </div>
+
+      <!-- Terms  -->
+      <div class="bg-[#344D79] pb-[100px]">
+        <div class="flex justify-center mb-[80px] lg:mb-[176px]">
+          <a
+            href=""
+            class="mx-auto md:mx-0 text-[24px] font-bold text-white bg-[#9A86FF] relative z-50 py-[15px] px-[10px] leading-8 w-[325px] block text-center rounded-full relative top-[-35px]"
+            style="box-shadow: 6px 7px 0px 0px #fff"
+          >
+            Deposit Now
+          </a>
+        </div>
+        <div
+          class="container font-normal text-base text-white leading-8 px-[16px] md:px-[2%]"
+        >
+          <p>Terms and ConditionsBonus Policy and Terms of Service apply.</p>
+          <br />
+
+          <p>Newdepositing players only.</p>
+          <p>Valid until 31.12.2024.</p>
+          <p>his offer can be claimed once during the promotion period.</p>
+          <p>
+            T Offer valid on first deposit only when using Promo Code:
+            BONANZA100.
+          </p>
+          <p>Min. deposit: £20.</p>
+          <p>Max. bonus: £150 and 50 spins on Big Bass Bonanza.</p>
+          <p>Offer valid on first deposit.</p>
+          <p>
+            In addition to the deposit bonus, you are also eligible for 50 spins
+            that will be issued upon your first deposit and can be used on Big
+            Bass Bonanza.
+          </p>
+          <p>
+            Winnings won with games that require deposit, have to be wagered
+            35x.
+          </p>
+          <p>Bonuses that require deposit, have to be wagered 35x.</p>
+          <br />
+
+          <p>
+            (brandname) Welcome Bonus – 100% bonus on your first deposit up to
+            £150 Unless otherwise stated. This bonus only applies for deposits
+            of £20 or higher! All you need to do is just deposit the money in
+            your (brandname) account and you will receive this bonus instantly!
+          </p>
+          <p>For example:</p>
+          <p>Deposit £20, get £20 free, play with £40. Deposit £25, get</p>
+          <p>£25 free, play with £50.</p>
+          <p>The (brandname) Terms and Conditions apply to the website.</p>
+          <br />
+
+          <p>The “Exclusive Bonus” terms & conditions:</p>
+          <br />
+          <div class="ml-4">
+            <li>Bonus Policy and Terms of Service apply.</li>
+            <li>
+              The “Exclusive Bonus” is limited to one bonus per household.
+            </li>
+            <li>
+              The “Exclusive Bonus” may not be used in conjunction with any
+              other bonus, promotion or offer.
+            </li>
+            <li>
+              The “Exclusive Bonus” must be wagered at (brandname).com within 21
+              days of being credited to your account.(brandname).com reserves
+              the right, at any time, to revoke any Exclusive Bonus not used
+              within the allotted time period.
+            </li>
+            <li>
+              Please note that in the interests of fair gaming, we require you
+              to have wagered a minimum of 35 times the sum of your welcome
+              bonus before cashing out any winnings. Wagering requirements T&Cs
+              apply.
+            </li>
+          </div>
+
+          <br />
+          <p>For example:</p>
+          <p>Deposit £20 get £20 free, wager is £700 to cash out.</p>
+          <p>Deposit £25 get £25 free, wager is £875 to cash out.</p>
+          <br />
+          <br />
+
+          <p>Terms on bonus spins:</p>
+          <div class="ml-4">
+            <li>Bonus Policy and Terms of Service apply.</li>
+            <li>
+              All spins credited to a player’s account must be used within 1 day
+              from when the offer was granted. Unused spins will be removed from
+              the account thereafter.
+            </li>
+            <li>
+              Spins are considered as a bonus and must be wagered before any
+              winnings can be cashed out. The free games bonus is calculated as
+              the total value of the winnings received through the use of the
+              free games. The total value of such credit shall be subject to the
+              wagering requirements set out below.
+            </li>
+            <li>
+              Any and all free games bonus(es) shall be subject to the standard
+              bonus policy detailed hereby.
+            </li>
+            <li>
+              Players, who initiate a deposit in order to receive free games as
+              part of a deposit offer, MUST wager their deposit amount before
+              initiating a withdrawal. Players who withdraw their deposit
+              without wagering will lose the free games earned from the deposit
+              or if used, any winnings earned from the free games.
+            </li>
+            <li>
+              The above terms also apply to 50 spins ON YOUR FIRST DEPOSIT. For
+              more details, please see our FAQ page.
+            </li>
+          </div>
+          <br />
+          <p>
+            Deposits may be withdrawn before a player’s wagering requirements
+            have been fulfilled. However, if this occurs, all bonuses and
+            winnings will be voided/removed from the player’s account. Players
+            must contact support in order to withdraw their deposit.
+          </p>
+          <br />
+
+          <p>
+            Winnings received through the use of the free bonus (no deposit) or
+            free spins shall not exceed £100. Any winnings which shall be made
+            with the free bonus or free spins which exceeds the £100 maximum,
+            shall be considered as nil, and shall not be recorded as winnings.
+            Only the maximum winnings of £100 can be withdrawn by the Player
+            subject to the terms specified in the Bonus Policy.
+          </p>
+          <br />
+
+          <p>
+            When a bet abuses the betting system – regardless of which game it
+            was placed on – it will not count towards a player’s wagering
+            requirements. If the player placed single bets equal to or greater
+            than £4 or £0.50 per line, or 15 percent of the bonus amount before
+            the wagering requirements for the bonus have been met, we reserve
+            the right to withhold any amount in excess of the player’s original
+            deposit from a player’s withdrawal. In addition, if a player
+            deposited with Skrill or Neteller and placed single bets equal to or
+            greater than £2.50 of the bonus amount before the wagering
+            requirements for the bonus have been met, we reserve the right to
+            withhold any amount in excess of the player’s original deposit from
+            a player’s withdrawal. If the player placed bets on any of the games
+            which contribute 0% to the wagering requirement before the wagering
+            requirements for the bonus have been met, we reserve the right to
+            withhold any amount in excess of a player’s original deposit from a
+            player’s withdrawal.
+          </p>
+          <br />
+          <p>
+            (brandname) may cancel, amend or modify any promotion, competition,
+            bonus or special offer by publishing the amended or modified terms
+            or notice of cancellation on the relevant internet page of the
+            promotion, competition or special offer. Such amendment,
+            modification or cancellation shall take effect following the expiry
+            of a period of 14 days of such publication, or with immediate
+            effect, where required for security reasons, to comply with
+            applicable law or regulation, due to abuse or otherwise where the
+            promotion, competition or special offer is not capable of being
+            conducted as specified as a result of exceptional circumstances.
+          </p>
+          <br />
+
+          <p>
+            Please note that (brandname) will not exercise this right to amend,
+            modify or cancel any promotion, competition of special offer under
+            this term for players who have already opted into the relevant
+            promotion, competition or special offer, made a deposit in
+            expectation of receipt of a bonus or otherwise commenced play in
+            relation to the relevant promotion, competition or special offer
+            where to do so would affect the ability of these players to:
+          </p>
+          <p>receive or accrue the relevant bonus;</p>
+          <p>
+            fulfill the remaining qualifying criteria for the relevant
+            promotion, competition or special offer;
+          </p>
+          <p>
+            use, access or retain any bonuses already received or accrued,
+            except where the relevant Customer(s) has engaged in fraudulent or
+            unlawful behavior or where the amendment, modification
+          </p>
+          <p>
+            or cancellation of the promotion is required to enable Us to comply
+            with our legal and/or regulatory obligations. Notwithstanding
+            anything else in this Bonus Policy or any additional terms or rules
+            which govern the provision of any gambling promotion to players,
+            players shall not be prevented from withdrawing:
+          </p>
+          <p>their deposit balance,</p>
+          <p>
+            winnings from wagers made with funds in that deposit balance; and
+          </p>
+          <p>
+            winnings from any bonus which are not subject to wagering
+            requirements or restrictions (or for which wagering requirements or
+            restrictions have been satisfied), except where (brandname)
+          </p>
+          <p>
+            is required to prevent such withdrawal of funds in order to comply
+            with legal and regulatory obligations (including anti-money
+            laundering requirements).
+          </p>
+        </div>
+      </div>
+
+      <!-- copyright  -->
+      <div class="bg-[#E4E4E4]">
+        <div
+          class="container font-normal lg:text-xl text-base text-black leading-8 px-[16px] pb-[62px] pt-[47px] md:px-[2%] md:pt-[50px] lg:pt-[112px] md:pb-[50px] lg:pb-[94px]"
+        >
+          <p>
+            © Copyrights 2023 All Rights Reserved.
+            <a class="underline" href="">Jackiejackpot.com</a> is a brand owned
+            by Reward Group ApS, a company incorporated under the laws of
+            Denmark. The games on this website are powered and operated by
+            Aspire Global International LTD, a Malta-based company with
+            registration number C42296 and having registered office at 135, High
+            street, Sliema SLM 1548, Malta, which is a fully licensed operator
+            under the Remote Gaming Regulations of Malta MGA/CRP/148/2007 issued
+            on the 17 August 2009. Aspire Global International LTD have an Irish
+            Betting License with license reference number 1014834
+          </p>
+          <br />
+
+          <ul>
+            <li>Gambling can be addictive, please play responsibl</li>
+            <li>United Kingdom:</li>
+            <li>BeGambleAware</li>
+            <li>0808-8020-133Ireland: Problem Gambling</li>
+            <li>Ireland | 089-241-5401</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- brand  -->
+
+      <div class="bg-black">
+        <div
+          class="container p-[16px] md:px-[2%] md:pt-[112px] md:pb-[91px] grid md:grid-cols-7 grid-cols-1 gap-4 justify-items-center items-center"
+        >
+          <img class="mb-[30px] md:mb-0" src="./img/br1.png" alt="" />
+          <img class="mb-[30px] md:mb-0" src="./img/br2.png" alt="" />
+          <img class="mb-[30px] md:mb-0" src="./img/br3.png" alt="" />
+          <img class="mb-[30px] md:mb-0" src="./img/br4.png" alt="" />
+          <img class="mb-[30px] md:mb-0" src="./img/br5.png" alt="" />
+          <img class="mb-[30px] md:mb-0" src="./img/br6.png" alt="" />
+          <img class="mb-[30px] md:mb-0" src="./img/br7.png" alt="" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
